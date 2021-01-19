@@ -7,34 +7,17 @@ import {
 	VictoryLabel,
 } from 'victory';
 import { Flex } from '@chakra-ui/react';
-import fetcher from '@/utils/fetcher';
 
-const CaseChart = ({ province }) => {
-	const { data } = useSWR(`/api/cases/${province}`, fetcher);
-
-	console.log('data: ', data);
-	if (!data) {
-		return (
-			<Flex
-				flex={1}
-				maxW="100vw"
-				maxH="80vh"
-				justifyContent="center"
-				alignItems="center"
-			>
-				Loading...
-			</Flex>
-		);
-	}
-	const chartData = parseChartDats(data);
-
+const CaseChart = ({ cases }) => {
+	const chartData = parseChartData(cases);
 	return (
 		<Flex
 			flex={1}
 			maxW="100vw"
 			maxH="80vh"
 			justifyContent="center"
-			alignItems="center"
+			alignItems="flex-start"
+			direction="column"
 		>
 			<VictoryChart
 				width={800}
@@ -64,8 +47,8 @@ const CaseChart = ({ province }) => {
 	);
 };
 
-const parseChartDats = (data) => {
-	return data.map((d) => {
+const parseChartData = (cases) => {
+	return cases.map((d) => {
 		return {
 			x: d.date,
 			y: d.case,
