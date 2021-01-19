@@ -14,7 +14,6 @@ export default function Province() {
 	if (!data) {
 		return (
 			<>
-				>
 				<AppShell>
 					<Flex
 						flex={1}
