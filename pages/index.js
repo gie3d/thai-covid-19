@@ -11,13 +11,17 @@ export default function Home() {
 			<AppShell title="จังหวัดทั้งหมด">
 				<Flex justify="center" alignItems="center">
 					<OrderedList>
-						{data?.map((d) => (
-							<ListItem key={d.key}>
-								<Link href={`/${d.key}`}>
-									{d.value} (Updated at: {d.updatedAt})
-								</Link>
-							</ListItem>
-						))}
+						{data ? (
+							data?.map((d) => (
+								<ListItem key={d.key}>
+									<Link href={`/${d.key}`}>
+										{d.value} (Updated at: {d.updatedAt})
+									</Link>
+								</ListItem>
+							))
+						) : (
+							<Text color="gray.400">Loading...</Text>
+						)}
 					</OrderedList>
 				</Flex>
 			</AppShell>
