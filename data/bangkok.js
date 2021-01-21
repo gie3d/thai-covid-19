@@ -56,5 +56,10 @@ export default {
 			case: 13,
 			source: 'https://www.bangkokbiznews.com/news/detail/918320',
 		},
+		{
+			date: '21 Jan 2021',
+			case: 16,
+			source: 'https://www.prachachat.net/general/news-598350',
+		},
 	],
 };
