@@ -61,5 +61,10 @@ export default {
 			case: 16,
 			source: 'https://www.prachachat.net/general/news-598350',
 		},
+		{
+			date: '22 Jan 2021',
+			case: 13,
+			source: 'https://www.prachachat.net/general/news-599392',
+		},
 	],
 };
