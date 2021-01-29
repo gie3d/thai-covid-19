@@ -51,5 +51,35 @@ export default {
 			case: 261,
 			source: 'https://www.prachachat.net/general/news-599392',
 		},
+		{
+			date: '23 Jan 2021',
+			case: 163,
+			source: 'https://www.dailynews.co.th/bangkok/821860',
+		},
+		{
+			date: '24 Jan 2021',
+			case: 148,
+			source: 'https://www.dailynews.co.th/bangkok/821860',
+		},
+		{
+			date: '25 Jan 2021',
+			case: 148,
+			source: 'https://www.dailynews.co.th/bangkok/821860',
+		},
+		{
+			date: '26 Jan 2021',
+			case: 914,
+			source: 'https://www.dailynews.co.th/bangkok/821860',
+		},
+		{
+			date: '27 Jan 2021',
+			case: 792,
+			source: 'https://www.dailynews.co.th/bangkok/821860',
+		},
+		{
+			date: '28 Jan 2021',
+			case: 733,
+			source: 'https://www.dailynews.co.th/bangkok/821860',
+		},
 	],
 };
